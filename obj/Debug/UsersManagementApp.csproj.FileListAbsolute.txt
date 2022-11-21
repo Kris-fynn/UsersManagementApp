@@ -1,0 +1,13 @@
+C:\Users\Kris Fynn\Documents\UsersManagementApp\bin\Debug\UsersManagementApp.exe.config
+C:\Users\Kris Fynn\Documents\UsersManagementApp\bin\Debug\UsersManagementApp.exe
+C:\Users\Kris Fynn\Documents\UsersManagementApp\bin\Debug\UsersManagementApp.pdb
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.csproj.AssemblyReference.cache
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Properties.Resources.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.csproj.GenerateResource.cache
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.exe
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.pdb
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.TemplateForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.RolesForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ViewRolesForm.resources
