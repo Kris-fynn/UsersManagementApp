@@ -11,3 +11,4 @@ C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.pdb
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.TemplateForm.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.RolesForm.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ViewRolesForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.UsersForm.resources

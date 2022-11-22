@@ -154,7 +154,7 @@ namespace UsersManagementApp.Forms
                             DescriptionText = row["Description"].ToString();
 
                            // Change Controls
-                           SaveButton.Text = "Update Role Information"
+                           SaveButton.Text = "Update Role Information";
                            DeleteButton.Enabled = true;
 
 
@@ -183,7 +183,7 @@ namespace UsersManagementApp.Forms
                                 {
                                      cmd.CommandType = CommandType.StoredProcedure;
 
-                                     cmd.Parameters.AddWithValue("@RoleId", this.Roled);
+                                     cmd.Parameters.AddWithValue("@RoleId", this.RoleId);
 
                                      if (con.State != ConnectionState.Open)
                                      con.Open();
@@ -192,10 +192,10 @@ namespace UsersManagementApp.Forms
 
                                      MessageBox.Show("Role is successfully deleted from the system.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                      ResetFormControl();
-                }
-            }
+                                }
+                         }
 
-        }
+                    }
 
 
               }

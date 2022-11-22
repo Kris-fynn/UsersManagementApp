@@ -59,6 +59,12 @@
     <Compile Include="Forms\TemplateForm.Designer.cs">
       <DependentUpon>TemplateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ViewRolesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,7 @@
       <DependentUpon>ViewRolesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="General\AppConnection.cs" />
+    <Compile Include="General\SecureData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\RolesForm.resx">
@@ -73,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TemplateForm.resx">
       <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewRolesForm.resx">
       <DependentUpon>ViewRolesForm.cs</DependentUpon>
