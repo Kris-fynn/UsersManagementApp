@@ -72,7 +72,7 @@ namespace UsersManagementApp.Forms
                         cmd.CommandType = CommandType.StoredProcedure;
 
                         cmd.Parameters.AddWithValue("@UserName", UserNameTextBox.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Password", PasswordTextBox.Text.Trim()); 
+                        cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(PasswordTextBox.Text.Trim())); 
                         cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
                         cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
                         cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());

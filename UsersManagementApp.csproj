@@ -71,6 +71,12 @@
     <Compile Include="Forms\ViewRolesForm.Designer.cs">
       <DependentUpon>ViewRolesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ViewUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewUsersForm.Designer.cs">
+      <DependentUpon>ViewUsersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="General\AppConnection.cs" />
     <Compile Include="General\SecureData.cs" />
     <Compile Include="Program.cs" />
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewRolesForm.resx">
       <DependentUpon>ViewRolesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewUsersForm.resx">
+      <DependentUpon>ViewUsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

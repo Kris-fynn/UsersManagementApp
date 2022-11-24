@@ -17,7 +17,7 @@ namespace UsersManagementApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UsersForm());
+            Application.Run(new ViewUsersForm());
         }
     }
 }
