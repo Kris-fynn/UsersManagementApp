@@ -138,7 +138,6 @@
             this.Name = "RolesForm";
             this.ShowInTaskbar = true;
             this.Text = "Role Information";
-            this.Load += new System.EventHandler(this.RolesForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

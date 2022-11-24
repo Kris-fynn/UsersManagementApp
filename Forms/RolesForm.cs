@@ -106,8 +106,6 @@ namespace UsersManagementApp.Forms
                 SaveButton.Text = "Save Information";
                 DeleteButton.Enabled = false;
 
-
-
              } 
         private bool IsFormValid
         {
@@ -159,10 +157,10 @@ namespace UsersManagementApp.Forms
 
 
                        }
-                   }
+             }
                    // MessageBox.Show("Form is loaded for updade process");
 
-             }
+        }
              // else 
              //{ 
              //    MessageBox.Show("Form is loaded for insert process")

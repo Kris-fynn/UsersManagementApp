@@ -36,7 +36,7 @@
             this.refreshRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Seach = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.UsersDataGridView = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsersDataGridView)).BeginInit();
@@ -74,6 +74,7 @@
             this.newRoleToolStripMenuItem.Name = "newRoleToolStripMenuItem";
             this.newRoleToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.newRoleToolStripMenuItem.Text = "New User";
+            this.newRoleToolStripMenuItem.Click += new System.EventHandler(this.newRoleToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -86,6 +87,7 @@
             this.refreshRecordsToolStripMenuItem.Name = "refreshRecordsToolStripMenuItem";
             this.refreshRecordsToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.refreshRecordsToolStripMenuItem.Text = "Refresh Records";
+            this.refreshRecordsToolStripMenuItem.Click += new System.EventHandler(this.refreshRecordsToolStripMenuItem_Click);
             // 
             // SearchTextBox
             // 
@@ -105,15 +107,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Search by User Name or Role: ";
             // 
-            // Seach
+            // SearchButton
             // 
-            this.Seach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Seach.Location = new System.Drawing.Point(587, 54);
-            this.Seach.Name = "Seach";
-            this.Seach.Size = new System.Drawing.Size(89, 26);
-            this.Seach.TabIndex = 3;
-            this.Seach.Text = "Search";
-            this.Seach.UseVisualStyleBackColor = true;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.SearchButton.Location = new System.Drawing.Point(587, 54);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(89, 26);
+            this.SearchButton.TabIndex = 3;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // UsersDataGridView
             // 
@@ -122,6 +125,7 @@
             this.UsersDataGridView.Name = "UsersDataGridView";
             this.UsersDataGridView.Size = new System.Drawing.Size(661, 215);
             this.UsersDataGridView.TabIndex = 4;
+            this.UsersDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersDataGridView_CellDoubleClick);
             // 
             // ViewUsersForm
             // 
@@ -129,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 318);
             this.Controls.Add(this.UsersDataGridView);
-            this.Controls.Add(this.Seach);
+            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.menuStrip1);
@@ -153,7 +157,7 @@
         private System.Windows.Forms.ToolStripMenuItem refreshRecordsToolStripMenuItem;
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Seach;
+        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridView UsersDataGridView;
     }
 }
