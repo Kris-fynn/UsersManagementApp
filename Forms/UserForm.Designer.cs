@@ -1,6 +1,6 @@
 ﻿namespace UsersManagementApp.Forms
 {
-    partial class UsersForm
+    partial class UserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -179,7 +179,7 @@
             this.RolesComboBox.Size = new System.Drawing.Size(224, 21);
             this.RolesComboBox.TabIndex = 11;
             // 
-            // UsersForm
+            // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +195,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "UsersForm";
+            this.Name = "UserForm";
             this.Text = "User Information";
             this.Load += new System.EventHandler(this.UsersForm_Load);
             this.menuStrip1.ResumeLayout(false);

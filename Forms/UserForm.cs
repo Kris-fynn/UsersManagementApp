@@ -13,13 +13,16 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace UsersManagementApp.Forms
 {
-    public partial class UsersForm : TemplateForm
+    public partial class UserForm : TemplateForm
     {
-        public UsersForm()
+        public UserForm()
         {
             InitializeComponent();
         }
 
+        //Properties to handle updatesvand delete operations
+        public string Username { get; set; }
+        public bool IsUpdate { get; set; }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
