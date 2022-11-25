@@ -54,8 +54,9 @@ namespace UsersManagementApp.Forms
 
         private void newRoleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UsersForm usersForm= new UsersForm();
+            UserForm usersForm= new UserForm();
             usersForm.ShowDialog();
+            LoadDataIntoDataGridView();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
@@ -104,7 +105,7 @@ namespace UsersManagementApp.Forms
             {
                 string userName = UsersDataGridView.SelectedRows[0].Cells[0].Value.ToString();
                 //MessageBox.Show(userName);
-                UsersForm usersForm = new UsersForm();
+                UserForm usersForm = new UserForm();
                 usersForm.Username= userName; 
                 usersForm.IsUpdate= true;   
                 usersForm.ShowDialog();

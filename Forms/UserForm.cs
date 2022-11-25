@@ -36,7 +36,115 @@ namespace UsersManagementApp.Forms
         private void UsersForm_Load(object sender, EventArgs e)
         {
             LoadDataIntoRolesComboBox();
+
+            // For Update Process
+            if (this.IsUpdate == true)// or Use simple if(this.IsUpdate) function 
+            {
+                using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString())
+                {
+                       using (SqlConnection cmd = new SqlConnection("usp_Users_ReloadDataForUpdate", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@UserName", this.Username);
+
+                    if (con.State != ConnectionState.Open)
+                        con.Open();
+
+                    DataTable dtUser = new DataTable();
+
+                    SqlDataReader sdr = cmd.ExecuteReader();
+
+                    dtUser.Load(sdr);
+
+                    DataRow row = dtUser.Rows[0];
+
+                    Username.TextBox.Text = row["UserName"];
+                    RolesComboBox.SelectedValue = row["RoleId"];
+                    IsActiveCheckBox.Checked = Convert.ToBoolean(row["IsActive"]);
+                    Description.TextBox.Text = row["Description"].ToString();
+
+                    // Change Controls
+                    SaveButton.Text = "Update User Information";
+                    DeleteButton.Enabled = true;
+
+
+                       }
+            }
+            }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            If(IsFormValid())
+            {
+                if(this.IsUpdate =+ true)
+                {
+                    //Do update Process
+                    using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
+                    {
+                        using (SqlCommand cmd = new SqlConnection("", con))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
+
+                            cmd.Parameters.AddWithValue("@UserName", UserNameTextBox.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(PasswordTextBox.Text.Trim()));
+                            cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
+                            cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
+                            cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
+                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+
+
+                            if (con.State != ConnectionState.Open)
+                            {
+                                con.Open();
+                            }
+
+                            cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("User is successfully saved in the database.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            ResetFormControl();
+                        }
+                    }
+                }
+                else
+                {
+                    //Do Insert Operation
+                    using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
+                    {
+                        using (SqlCommand cmd = new SqlConnection("usp_Users_InsertNewUser", con))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
+
+                            cmd.Parameters.AddWithValue("@UserName", UserNameTextBox.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(PasswordTextBox.Text.Trim()));
+                            cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
+                            cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
+                            cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
+                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+
+
+                            if (con.State != ConnectionState.Open)
+                            {
+                                con.Open();
+                            }
+
+                            cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("User is successfully saved in the database.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            ResetFormControl();
+                        }
+                    }
+
+                }
+
+            }
         }
+        // MessageBox.Show("Form is loaded for updade process");
+
+    }
+    }
 
         private void LoadDataIntoRolesComboBox()
         {
@@ -70,7 +178,7 @@ namespace UsersManagementApp.Forms
                 //Do Insert Operation
                 using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
                 {
-                    using (SqlCommand cmd = new SqlConnection("usp_Users_InsertNewUser", con))
+                    using (SqlCommand cmd = new SqlConnection("usp_U", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
 

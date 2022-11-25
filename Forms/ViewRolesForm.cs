@@ -35,7 +35,7 @@ namespace UsersManagementApp.Forms
         {
             using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
             {
-                using(SqlCommand cmd = new SqlCommand("usp_Roles_LoadDataIntoGridView", con))
+                using(SqlCommand cmd = new SqlCommand("usp_Roles_LoadDataIntoDataGridView", con))
                 {
 
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -61,7 +61,7 @@ namespace UsersManagementApp.Forms
 
         private void SearchTextBox.Text_Click(object sender, EventArgs e)
         {
-            if(SearchText.Text != string.Empty)
+            if(SearchTextBox.Text != string.Empty)
             {
                using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString())) 
                 {
@@ -123,6 +123,11 @@ namespace UsersManagementApp.Forms
                 LoadDataIntoDataGridView();
 
             }
+        }
+
+        private void ViewRolesForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

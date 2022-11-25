@@ -33,7 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.SaveButton_Click = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveButton = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -71,7 +71,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.SaveButton_Click,
+            this.SaveButton,
             this.toolStripMenuItem2,
             this.deleteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -93,12 +93,12 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(22, 20);
             this.toolStripMenuItem1.Text = "|";
             // 
-            // SaveButton_Click
+            // SaveButton
             // 
-            this.SaveButton_Click.Name = "SaveButton_Click";
-            this.SaveButton_Click.Size = new System.Drawing.Size(109, 20);
-            this.SaveButton_Click.Text = "Save Information";
-            this.SaveButton_Click.Click += new System.EventHandler(this.saveInformationToolStripMenuItem_Click);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(109, 20);
+            this.SaveButton.Text = "Save Information";
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -108,6 +108,7 @@
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.Enabled = false;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.deleteToolStripMenuItem.Text = "Delete";
@@ -212,7 +213,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem SaveButton_Click;
+        private System.Windows.Forms.ToolStripMenuItem SaveButton;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
