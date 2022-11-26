@@ -112,7 +112,6 @@
             this.DeleteButton_Click.Name = "DeleteButton_Click";
             this.DeleteButton_Click.Size = new System.Drawing.Size(52, 20);
             this.DeleteButton_Click.Text = "Delete";
-            this.DeleteButton_Click.Click += new System.EventHandler(this.DeleteButton_Click_Click);
             // 
             // textBox1
             // 
@@ -180,6 +179,7 @@
             this.RolesComboBox.Name = "RolesComboBox";
             this.RolesComboBox.Size = new System.Drawing.Size(224, 21);
             this.RolesComboBox.TabIndex = 11;
+            this.RolesComboBox.SelectedIndexChanged += new System.EventHandler(this.RolesComboBox_SelectedIndexChanged);
             // 
             // UserForm
             // 

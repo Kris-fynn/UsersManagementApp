@@ -46,7 +46,7 @@ namespace UsersManagementApp.Forms
 
                     DataTable dtRoles = new DataTable();
 
-                    SqlDataReader sqlDataReader sdr = cmd.ExecuteReader();
+                    SqlDataReader sdr = cmd.ExecuteReader();
 
                     dtRoles.Load(sdr);
 

@@ -144,7 +144,12 @@ namespace UsersManagementApp.Forms
             }
         }
 
-       
+        private void RolesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
 
 
         // MessageBox.Show("Form is loaded for updade process");
