@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -82,10 +83,11 @@ namespace UsersManagementApp.Forms
                     //Do update Process
                     using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
                     {
-                        using (SqlCommand cmd = new SqlConnection("", con))
+                        using (SqlCommand cmd = new SqlConnection("usp_Users_UpdateUserByUserName", con))
                         {
                             cmd.CommandType = CommandType.StoredProcedure;
 
+                            cmd.Parameters.AddWithValue("@OldUserName", this.Username;
                             cmd.Parameters.AddWithValue("@UserName", UserNameTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(PasswordTextBox.Text.Trim()));
                             cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
@@ -101,7 +103,7 @@ namespace UsersManagementApp.Forms
 
                             cmd.ExecuteNonQuery();
 
-                            MessageBox.Show("User is successfully saved in the database.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("User is successfully updated in the database.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             ResetFormControl();
                         }
@@ -141,6 +143,10 @@ namespace UsersManagementApp.Forms
 
             }
         }
+
+       
+
+
         // MessageBox.Show("Form is loaded for updade process");
 
     }
@@ -178,7 +184,7 @@ namespace UsersManagementApp.Forms
                 //Do Insert Operation
                 using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
                 {
-                    using (SqlCommand cmd = new SqlConnection("usp_U", con))
+                    using (SqlCommand cmd = new SqlConnection("usp_Users_InsertNewUser", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -215,6 +221,14 @@ namespace UsersManagementApp.Forms
             DescriptionTextBoxClear();
 
             UserNameTextBox.Focus();
+
+            if (this.IsUpdate) 
+            {
+                this.IsUpdate = false;
+                SaveButton.Text = "Save User Information";
+                DeleteButton.Enbled = false;
+                this.UserName = null;
+            }
         }
 
         private bool IsFormValid()
@@ -257,6 +271,40 @@ namespace UsersManagementApp.Forms
         //private void button1_Click(object sender, EventArgs e)
         //{
         //   Messege.Show(SecureData.EncryptData(SimpleStringTextBox.Text));
-        //  }
+       //  }
+
+      private void DeleteButton_Click_Click(object sender, EventArgs e)
+      {
+        if(this.IsUpdate == true)
+        {
+           DialogResult result = MessageBox.Show("Are you sure, You want to delele this User", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+          
+           if (result == DialogResult.Yes) 
+           {
+            // Delete User
+            using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString()))
+            {
+                using (SqlCommand cmd = new SqlCommand("usp_Users_DeleteUserByUserName", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@UserName", this.UserName);
+
+                    if (con.State != ConnectionState.Open)
+                        con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("User is successfully deleted from the system.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetFormControl();
+                }
+            }
+        }
+           else
+           {
+                MessageBox.Show("You cancelled this process", "Cancelled", MessageBoxButtons.OK,MessageBoxIcon.Information);
+           }
+        }
+      }
     }
 }

@@ -13,3 +13,5 @@ C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.For
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ViewRolesForm.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.UsersForm.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ViewUsersForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.Login.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.UserForm.resources
