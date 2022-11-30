@@ -44,9 +44,11 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LogoPictureBox.Image = global::UsersManagementApp.Properties.Resources.Login;
             this.LogoPictureBox.Location = new System.Drawing.Point(8, 12);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(424, 151);
+            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LogoPictureBox.TabIndex = 0;
             this.LogoPictureBox.TabStop = false;
             // 

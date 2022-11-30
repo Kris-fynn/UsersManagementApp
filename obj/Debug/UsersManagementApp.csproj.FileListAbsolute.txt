@@ -15,3 +15,5 @@ C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.For
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ViewUsersForm.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.Login.resources
 C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.UserForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.ChangePasswordForm.resources
+C:\Users\Kris Fynn\Documents\UsersManagementApp\obj\Debug\UsersManagementApp.Forms.DashboardForm.resources

@@ -42,15 +42,25 @@ namespace UsersManagementApp.Forms
 
                             con.Open();
 
-                        DataTable dtRoles = new DataTable();
+                        DataTable dtUser = new DataTable();
 
                         SqlDataReader  sdr = cmd.ExecuteReader();
 
                         
                         if(sdr.HasRows) 
                         {
-                            dtRoles.Load(sdr);
-                            MessageBox.Show("Login Successfully")
+                            dtUser.Load(sdr);
+                            DataRow userRow = dtUser.Rows[0];
+                            
+                            LoggedInUser.UserName = userRow["UserName"].ToString();
+                            LoggedInUser.RoleId = Convert.ToInt32(userRow["RoleId"]);
+
+                            //MessageBox.Show("Login Successfully")
+                            
+                            this.Hide();
+
+                            DashboardForm dashboardForm = new DashboardForm();
+                            dashboardForm.ShowDialog();
                         }
                         else
                         {
@@ -79,6 +89,6 @@ namespace UsersManagementApp.Forms
 
                 return true;
             }
-        }
+    }
     }
 }
