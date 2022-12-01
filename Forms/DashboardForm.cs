@@ -54,14 +54,35 @@ namespace UsersManagementApp.Forms
 
         private void viewRolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewRolesForm vrf= new ViewRolesForm();
+            ViewRolesForm vrf = new ViewRolesForm();
             vrf.ShowDialog();
         }
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
             AdminLabel.Text = LoggedInUser.UserName;
-            RoleLabel.Text = LoggedInUser.RoleId.ToString();
+            //RoleLabel.Text = LoggedInUser.RoleId.ToString();
+
+            SetupUserAccess();
+        }
+
+        private void SetupUserAccess()
+        {
+            switch(LoggedInUserUser.RoleId)
+            {
+                case 1:
+                    RoleLabel.Text = "Full Rights";
+                    AdminMenu.Visible  = true;
+
+                    break;
+                case 2:
+                    RoleLabel.Text = "Normal Rights";
+                    break;
+                case 3:
+                    RoleLabel.Text = "Limited Rights";
+                    break;
+            } 
+
         }
     }
 }

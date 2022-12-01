@@ -47,7 +47,7 @@ namespace UsersManagementApp.Forms
                             cmd.Parameters.AddWithValue("@RoleId", TitleTextBox.Text.Trim())
                             cmd.Parameters.AddWithValue("@RoleTitle", TitleTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
-                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+                            cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
                             if (con.State != ConnectionState.Open)
                             {
@@ -74,7 +74,7 @@ namespace UsersManagementApp.Forms
 
                             cmd.Parameters.AddWithValue("@RoleTitle", TitleTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
-                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+                            cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
                             if (con.State != ConnectionState.Open)
                             {

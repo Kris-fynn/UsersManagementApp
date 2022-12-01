@@ -44,34 +44,34 @@ namespace UsersManagementApp.Forms
                 using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString())
                 {
                        using (SqlConnection cmd = new SqlConnection("usp_Users_ReloadDataForUpdate", con))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
+                       {
+                            cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@UserName", this.Username);
+                          cmd.Parameters.AddWithValue("@UserName", this.Username);
 
-                    if (con.State != ConnectionState.Open)
-                        con.Open();
+                          if (con.State != ConnectionState.Open)
+                           con.Open();
 
-                    DataTable dtUser = new DataTable();
+                          DataTable dtUser = new DataTable();
 
-                    SqlDataReader sdr = cmd.ExecuteReader();
+                          SqlDataReader sdr = cmd.ExecuteReader();
 
-                    dtUser.Load(sdr);
+                          dtUser.Load(sdr);
 
-                    DataRow row = dtUser.Rows[0];
+                          DataRow row = dtUser.Rows[0];
 
-                    Username.TextBox.Text = row["UserName"];
-                    RolesComboBox.SelectedValue = row["RoleId"];
-                    IsActiveCheckBox.Checked = Convert.ToBoolean(row["IsActive"]);
-                    Description.TextBox.Text = row["Description"].ToString();
+                          Username.TextBox.Text = row["UserName"];
+                          RolesComboBox.SelectedValue = row["RoleId"];
+                          IsActiveCheckBox.Checked = Convert.ToBoolean(row["IsActive"]);
+                           Description.TextBox.Text = row["Description"].ToString();
 
-                    // Change Controls
-                    SaveButton.Text = "Update User Information";
-                    DeleteButton.Enabled = true;
+                          // Change Controls
+                          SaveButton.Text = "Update User Information";
+                          DeleteButton.Enabled = true;
 
 
                        }
-            }
+              }
             }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -87,13 +87,13 @@ namespace UsersManagementApp.Forms
                         {
                             cmd.CommandType = CommandType.StoredProcedure;
 
-                            cmd.Parameters.AddWithValue("@OldUserName", this.Username;
+                            cmd.Parameters.AddWithValue("@OldUserName", this.Username);
                             cmd.Parameters.AddWithValue("@UserName", UserNameTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(PasswordTextBox.Text.Trim()));
                             cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
                             cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
                             cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
-                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+                            cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
 
                             if (con.State != ConnectionState.Open)
@@ -123,7 +123,7 @@ namespace UsersManagementApp.Forms
                             cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
                             cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
                             cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
-                            cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+                            cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
 
                             if (con.State != ConnectionState.Open)
@@ -198,7 +198,7 @@ namespace UsersManagementApp.Forms
                         cmd.Parameters.AddWithValue("@RoleId", RolesComboBox.SelectedValue);
                         cmd.Parameters.AddWithValue("@IsActive", IsActiveCheckBox.Checked);
                         cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
-                        cmd.Parameters.AddWithValue("@CreatedBy", "Admin");
+                        cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
 
                         if (con.State != ConnectionState.Open)

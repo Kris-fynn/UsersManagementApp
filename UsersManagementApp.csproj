@@ -111,6 +111,7 @@
       <DependentUpon>ViewUsersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="General\AppConnection.cs" />
+    <Compile Include="General\LoggedInUser.cs" />
     <Compile Include="General\SecureData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -184,6 +185,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\View Students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit Button %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psswrdIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddStudents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddStudents1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
