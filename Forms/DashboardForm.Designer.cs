@@ -31,32 +31,41 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitApplictionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.chengePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitApplictionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdminMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userAccessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.AdminLabel = new System.Windows.Forms.Label();
             this.RoleLabel = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,10 +75,10 @@
             this.toolStripMenuItem1,
             this.chengePasswordToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.adminToolStripMenuItem});
+            this.AdminMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(901, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(939, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,10 +91,33 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // contextMenuStrip1
+            // studentsToolStripMenuItem
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newStudentToolStripMenuItem,
+            this.viewStudentsToolStripMenuItem});
+            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
+            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.studentsToolStripMenuItem.Text = "Students";
+            // 
+            // newStudentToolStripMenuItem
+            // 
+            this.newStudentToolStripMenuItem.Name = "newStudentToolStripMenuItem";
+            this.newStudentToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.newStudentToolStripMenuItem.Text = "New Student";
+            // 
+            // viewStudentsToolStripMenuItem
+            // 
+            this.viewStudentsToolStripMenuItem.Name = "viewStudentsToolStripMenuItem";
+            this.viewStudentsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.viewStudentsToolStripMenuItem.Text = "View Students";
+            // 
+            // exitApplictionToolStripMenuItem
+            // 
+            this.exitApplictionToolStripMenuItem.Name = "exitApplictionToolStripMenuItem";
+            this.exitApplictionToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.exitApplictionToolStripMenuItem.Text = "Exit Appliction";
+            this.exitApplictionToolStripMenuItem.Click += new System.EventHandler(this.exitApplictionToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -106,43 +138,16 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(22, 20);
             this.toolStripMenuItem2.Text = "|";
             // 
-            // adminToolStripMenuItem
+            // AdminMenu
             // 
-            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AdminMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem,
             this.rolesToolStripMenuItem,
             this.userAccessToolStripMenuItem});
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.adminToolStripMenuItem.Text = "Admin";
-            // 
-            // studentsToolStripMenuItem
-            // 
-            this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newStudentToolStripMenuItem,
-            this.viewStudentsToolStripMenuItem});
-            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.studentsToolStripMenuItem.Text = "Students";
-            // 
-            // exitApplictionToolStripMenuItem
-            // 
-            this.exitApplictionToolStripMenuItem.Name = "exitApplictionToolStripMenuItem";
-            this.exitApplictionToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.exitApplictionToolStripMenuItem.Text = "Exit Appliction";
-            this.exitApplictionToolStripMenuItem.Click += new System.EventHandler(this.exitApplictionToolStripMenuItem_Click);
-            // 
-            // newStudentToolStripMenuItem
-            // 
-            this.newStudentToolStripMenuItem.Name = "newStudentToolStripMenuItem";
-            this.newStudentToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.newStudentToolStripMenuItem.Text = "New Student";
-            // 
-            // viewStudentsToolStripMenuItem
-            // 
-            this.viewStudentsToolStripMenuItem.Name = "viewStudentsToolStripMenuItem";
-            this.viewStudentsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.viewStudentsToolStripMenuItem.Text = "View Students";
+            this.AdminMenu.Name = "AdminMenu";
+            this.AdminMenu.Size = new System.Drawing.Size(55, 20);
+            this.AdminMenu.Text = "Admin";
+            this.AdminMenu.Visible = false;
             // 
             // usersToolStripMenuItem
             // 
@@ -150,8 +155,22 @@
             this.newUserToolStripMenuItem,
             this.viewUsersToolStripMenuItem});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.usersToolStripMenuItem.Text = "Users";
+            // 
+            // newUserToolStripMenuItem
+            // 
+            this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
+            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.newUserToolStripMenuItem.Text = "New User";
+            this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
+            // 
+            // viewUsersToolStripMenuItem
+            // 
+            this.viewUsersToolStripMenuItem.Name = "viewUsersToolStripMenuItem";
+            this.viewUsersToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.viewUsersToolStripMenuItem.Text = "View Users";
+            this.viewUsersToolStripMenuItem.Click += new System.EventHandler(this.viewUsersToolStripMenuItem_Click);
             // 
             // rolesToolStripMenuItem
             // 
@@ -159,42 +178,33 @@
             this.newRoleToolStripMenuItem,
             this.viewRolesToolStripMenuItem});
             this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
-            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.rolesToolStripMenuItem.Text = "Roles";
-            // 
-            // newUserToolStripMenuItem
-            // 
-            this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
-            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newUserToolStripMenuItem.Text = "New User";
-            this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
-            // 
-            // viewUsersToolStripMenuItem
-            // 
-            this.viewUsersToolStripMenuItem.Name = "viewUsersToolStripMenuItem";
-            this.viewUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.viewUsersToolStripMenuItem.Text = "View Users";
-            this.viewUsersToolStripMenuItem.Click += new System.EventHandler(this.viewUsersToolStripMenuItem_Click);
             // 
             // newRoleToolStripMenuItem
             // 
             this.newRoleToolStripMenuItem.Name = "newRoleToolStripMenuItem";
-            this.newRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newRoleToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.newRoleToolStripMenuItem.Text = "New Role";
             this.newRoleToolStripMenuItem.Click += new System.EventHandler(this.newRoleToolStripMenuItem_Click);
             // 
             // viewRolesToolStripMenuItem
             // 
             this.viewRolesToolStripMenuItem.Name = "viewRolesToolStripMenuItem";
-            this.viewRolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewRolesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.viewRolesToolStripMenuItem.Text = "View Roles";
             this.viewRolesToolStripMenuItem.Click += new System.EventHandler(this.viewRolesToolStripMenuItem_Click);
             // 
             // userAccessToolStripMenuItem
             // 
             this.userAccessToolStripMenuItem.Name = "userAccessToolStripMenuItem";
-            this.userAccessToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userAccessToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.userAccessToolStripMenuItem.Text = "User Access";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // label1
             // 
@@ -217,7 +227,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(737, 85);
+            this.label3.Location = new System.Drawing.Point(819, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 13);
             this.label3.TabIndex = 7;
@@ -226,7 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(737, 115);
+            this.label4.Location = new System.Drawing.Point(819, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 8;
@@ -250,12 +260,103 @@
             this.RoleLabel.TabIndex = 10;
             this.RoleLabel.Text = "  Acc Label";
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Image = global::UsersManagementApp.Properties.Resources.RestoreDataBase1;
+            this.button10.Location = new System.Drawing.Point(192, 429);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(148, 97);
+            this.button10.TabIndex = 17;
+            this.button10.Text = "Restore Database";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Image = global::UsersManagementApp.Properties.Resources.BackUpDataBase1;
+            this.button9.Location = new System.Drawing.Point(654, 314);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(148, 97);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "Backup Database";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Image = global::UsersManagementApp.Properties.Resources.ChangePassword1;
+            this.button8.Location = new System.Drawing.Point(500, 314);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(148, 97);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "Change Password";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = global::UsersManagementApp.Properties.Resources.ViewUsers1;
+            this.button7.Location = new System.Drawing.Point(346, 314);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(148, 97);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "View Users";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = global::UsersManagementApp.Properties.Resources.AddUser1;
+            this.button6.Location = new System.Drawing.Point(192, 314);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(148, 97);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Add User";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = global::UsersManagementApp.Properties.Resources.VieeUserRole1;
+            this.button5.Location = new System.Drawing.Point(654, 194);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(148, 97);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "View User Role";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::UsersManagementApp.Properties.Resources.AddUserRole1;
+            this.button4.Location = new System.Drawing.Point(500, 194);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 97);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Add User Role";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.GhostWhite;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::UsersManagementApp.Properties.Resources.AddStudents1;
-            this.button3.Location = new System.Drawing.Point(121, 259);
+            this.button3.Image = global::UsersManagementApp.Properties.Resources.AddStudents601;
+            this.button3.Location = new System.Drawing.Point(192, 194);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 97);
             this.button3.TabIndex = 4;
@@ -267,8 +368,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.GhostWhite;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::UsersManagementApp.Properties.Resources.ViewStudents7;
-            this.button2.Location = new System.Drawing.Point(340, 259);
+            this.button2.Image = global::UsersManagementApp.Properties.Resources.ViewStudents10;
+            this.button2.Location = new System.Drawing.Point(346, 194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 97);
             this.button2.TabIndex = 3;
@@ -281,7 +382,7 @@
             this.button1.BackColor = System.Drawing.Color.GhostWhite;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::UsersManagementApp.Properties.Resources.Exit_Button__1_;
-            this.button1.Location = new System.Drawing.Point(575, 259);
+            this.button1.Location = new System.Drawing.Point(346, 429);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 97);
             this.button1.TabIndex = 2;
@@ -290,11 +391,28 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UsersManagementApp.Properties.Resources.CMS1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(939, 44);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 450);
+            this.ClientSize = new System.Drawing.Size(939, 616);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.RoleLabel);
             this.Controls.Add(this.AdminLabel);
             this.Controls.Add(this.label4);
@@ -311,6 +429,7 @@
             this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,7 +446,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem chengePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AdminMenu;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewUsersToolStripMenuItem;
@@ -345,5 +464,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label AdminLabel;
         private System.Windows.Forms.Label RoleLabel;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }

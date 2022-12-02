@@ -91,8 +91,8 @@ namespace UsersManagementApp.Forms
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@UserName", LoggedInUser.UserName);
-                    cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(OldPasswordTextBox.Text.Trim());
+                    cmd.Parameters.AddWithValue("@UserName", LoggedInUser.UserName);
+                    cmd.Parameters.AddWithValue("@Password", SecureData.EncryptData(OldPasswordTextBox.Text.Trim()));
                 
 
                 if (con.State!=ConnectionState.Open)

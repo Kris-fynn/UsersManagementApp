@@ -66,6 +66,19 @@ namespace UsersManagementApp.Forms
             SetupUserAccess();
         }
 
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            if(LoggedInUser.RoleId == 1)
+            {
+                //Display Form and Do what you want
+            }
+            else
+            {
+                MessageBox.Show("You are not allowed to perform this operation.", "Access Denied", MessageBoxIcon.Information);
+            }
+          
+        }
+
         private void SetupUserAccess()
         {
             switch(LoggedInUserUser.RoleId)
@@ -82,6 +95,21 @@ namespace UsersManagementApp.Forms
                     RoleLabel.Text = "Limited Rights";
                     break;
             } 
+
+        }
+
+        private void RoleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

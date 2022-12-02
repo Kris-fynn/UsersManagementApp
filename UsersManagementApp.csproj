@@ -231,5 +231,38 @@
   <ItemGroup>
     <None Include="Resources\AddStudents1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddStudents601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewStudents11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUserRole1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VieeUserRole1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewUsers1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangePassword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackUpDataBase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestoreDataBase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMS2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

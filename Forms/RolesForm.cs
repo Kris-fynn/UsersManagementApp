@@ -77,10 +77,8 @@ namespace UsersManagementApp.Forms
                             cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
 
                             if (con.State != ConnectionState.Open)
-                            {
                                 con.Open();
-                            }
-
+                         
                             cmd.ExecuteNonQuery();
 
                             MessageBox.Show("Role is successfully saved in the database.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -107,7 +105,7 @@ namespace UsersManagementApp.Forms
                 DeleteButton.Enabled = false;
 
              } 
-        private bool IsFormValid
+        private bool IsFormValid()
         {
             if(TitleTextBox.Text.Trim() == string.Empty)
             {
@@ -124,9 +122,9 @@ namespace UsersManagementApp.Forms
             return true;
         }
         
-        private void RolesForm_Load(object sender, EventArgs e)
+        private void RolesForm_Load(object sender, EventArgs e, SqlConnection con)
         {
-             if (this.IsUpdate == true)// or Use simple if(this.IsUpdate) function 
+             if(this.IsUpdate == true)// or Use simple if(this.IsUpdate) function 
              {
                    using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString())
                    {
@@ -149,7 +147,7 @@ namespace UsersManagementApp.Forms
                           
                             TitleTextBox.Text = row["Title"].ToString();
 
-                            DescriptionText = row["Description"].ToString();
+                            Description.Text = row["Description"].ToString();
 
                            // Change Controls
                            SaveButton.Text = "Update Role Information";

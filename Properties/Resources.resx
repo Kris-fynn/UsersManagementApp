@@ -118,38 +118,101 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Exit Button (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit Button (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit Button (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit Button (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewStudents" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewStudents3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewStudents1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="View Students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\View Students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="psswrdIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\psswrdIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RestoreDataBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RestoreDataBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ViewStudents7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddStudents" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddStudents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="closeButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeButton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VieeUserRole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VieeUserRole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddUserRole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUserRole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="psswrdIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psswrdIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackUpDataBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackUpDataBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VieeUserRole1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VieeUserRole1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewUsers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewUsers1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit Button (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit Button (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewUsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewUsers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RestoreDataBase1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RestoreDataBase1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddUser1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUser1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangePassword1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangePassword1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ViewStudents5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ViewStudents5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,19 +223,37 @@
   <data name="Exit Button (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit Button (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ViewStudents2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ViewStudents6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ViewStudents6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ViewStudents4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViewStudents4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AddStudents4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AddUserRole1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUserRole1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AddStudents1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddStudents1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackUpDataBase1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackUpDataBase1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeButton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddStudents5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddStudents5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewStudents1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewStudents1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit Button (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit Button (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMS2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMS2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

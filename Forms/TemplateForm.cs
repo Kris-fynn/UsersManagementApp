@@ -16,5 +16,10 @@ namespace UsersManagementApp.Forms
         {
             InitializeComponent();
         }
+
+        private void TemplateForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
