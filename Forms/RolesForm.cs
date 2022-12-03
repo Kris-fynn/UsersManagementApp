@@ -44,7 +44,7 @@ namespace UsersManagementApp.Forms
                         {
                             cmd.CommandType = CommandType.StoredProcedure;
 
-                            cmd.Parameters.AddWithValue("@RoleId", TitleTextBox.Text.Trim())
+                            cmd.Parameters.AddWithValue("@RoleId", TitleTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@RoleTitle", TitleTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@Description", DescriptionTextBox.Text.Trim());
                             cmd.Parameters.AddWithValue("@CreatedBy", LoggedInUser.UserName);
@@ -93,18 +93,19 @@ namespace UsersManagementApp.Forms
         {
             TitleTextBox.Clear();
             DescriptionTextBox.Clear();
-            
+
             TitleTextBox.Focus();
 
             //
-             if(this.IsUpdate)
-             {
+            if (this.IsUpdate)
+            {
                 this.RoleId = 0;
                 this.IsUpdate = false;
                 SaveButton.Text = "Save Information";
                 DeleteButton.Enabled = false;
 
-             } 
+            }
+        }
         private bool IsFormValid()
         {
             if(TitleTextBox.Text.Trim() == string.Empty)
@@ -124,7 +125,7 @@ namespace UsersManagementApp.Forms
         
         private void RolesForm_Load(object sender, EventArgs e, SqlConnection con)
         {
-             if(this.IsUpdate == true)// or Use simple if(this.IsUpdate) function 
+             if (this.IsUpdate == true)// or Use simple if(this.IsUpdate) function 
              {
                    using (SqlConnection con = new SqlConnection(AppConnection.GetConnectionString())
                    {
